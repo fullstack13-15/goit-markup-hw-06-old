@@ -48,7 +48,6 @@
         </ul>
       </div>
     </header>
-
     <main class="main-background">
       <section class="section header-section">
         <div class="container header">
@@ -71,7 +70,7 @@
                     </svg>
                     <input id="username" name="name" type="text" />
                   </div>
-                  <label for="phone">Telefon</label>
+                  <label for="number">Telefon</label>
                   <div class="input-icons">
                     <svg width="12" height="12">
                       <use href="./images/icons.svg#icon-icon-user-phone"></use></svg
@@ -95,14 +94,18 @@
                       class="checkbox-input"
                       required
                     /><label for="agreements" class="checkbox-label"
-                      ><svg width="15" height="14">
-                        <use href="./images/icons.svg#icon-icon-unchecked"></use>
-                      </svg>
-                      <svg width="11" height="8" class="icon-hidden">
-                        <use href="./images/icons.svg#icon-icon-checked"></use>
-                      </svg>
-                      Oświadczam iż akceptuję <a href="#" class="tc-link">Regulamin</a> i
-                      <a href="#" class="tc-link">Politykę Prywatności.</a>
+                      ><div class="icon-container">
+                        <svg width="16" height="15" class="icon-unchecked">
+                          <use href="./images/icons.svg#icon-icon-unchecked"></use>
+                        </svg>
+                        <svg width="11" height="8" class="icon-checked">
+                          <use href="./images/icons.svg#icon-icon-checked"></use>
+                        </svg>
+                      </div>
+                      <div class="checkbox-text">
+                        Oświadczam iż akceptuję <a href="#" class="tc-link">Regulamin</a> i
+                        <a href="#" class="tc-link">Politykę Prywatności.</a>
+                      </div>
                     </label>
                   </div>
                   <button type="submit" class="send-btn">Wyślij</button>
@@ -349,7 +352,6 @@
         </ul>
       </section>
     </main>
-
     <footer class="footer-background">
       <div class="container">
         <div class="container footer-logo">
